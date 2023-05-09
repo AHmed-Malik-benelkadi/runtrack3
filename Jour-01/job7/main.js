@@ -1,7 +1,6 @@
 function jourtravaille(date) {
-    // Tableau des jours fériés de l'année 2020
     const joursFeries = [
-        new Date(2021, 0, 1),
+        new Date(2021, 0, 1), // Les mois commencent à 0 donc 0 = janvier, 1 = février, etc.
         new Date(2021, 3, 13),
         new Date(2021, 3, 12),
         new Date(2021, 4, 1),
@@ -22,7 +21,6 @@ function jourtravaille(date) {
             return;
         }
     }
-
     // Vérifie si la date est un week-end
     if (date.getDay() === 0 || date.getDay() === 6) { // Si le jour de la semaine est égal à 0 (dimanche) ou 6 (samedi)
         console.log("Non, " + date.getDate() + " " + (date.getMonth() + 1) + " " + date.getFullYear() + " est un week-end");
@@ -32,5 +30,6 @@ function jourtravaille(date) {
 }
 
 // Exemple d'utilisation de la fonction
-jourtravaille(new Date(2020, 11, 25));
-jourtravaille(new Date(2020, 11, 26));
+jourtravaille(new Date(2021, 11, 25));
+jourtravaille(new Date(2021, 11, 26));
+jourtravaille(new Date(2021, 11, 27));

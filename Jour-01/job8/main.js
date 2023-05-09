@@ -12,7 +12,7 @@ function sommenombrespremiers(a, b) {
 }
 
 // Exemples d'utilisation de la fonction
-console.log(sommenombrespremiers(2, 5)); // 7
-console.log(sommenombrespremiers(3, 4)); // false
-console.log(sommenombrespremiers(17, 19)); // 36
-console.log(sommenombrespremiers(18, 19)); // false
+console.log(sommenombrespremiers(2, 5));
+console.log(sommenombrespremiers(3, 4));
+console.log(sommenombrespremiers(17, 19));
+console.log(sommenombrespremiers(18, 19));
