@@ -1,1 +1,4 @@
-console.log("Hello Javascript ! ")
+function bis() {
+    alert("Hello Javascript!");
+
+}

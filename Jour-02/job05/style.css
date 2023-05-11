@@ -1,0 +1,44 @@
+body {
+    min-height: 4096px;
+}
+
+/* style pour le footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* hauteur du footer */
+    background-color: #ccc; /* couleur de base du footer */
+}
+
+body::after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, red, green);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.5s;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+}
+
+body.scrolling::after {
+    opacity: 1;
+}
+
